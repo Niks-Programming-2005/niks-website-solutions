@@ -1,0 +1,13 @@
+{
+  "name": "niks-website-solutions",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tailwindcss -i ./css/styles.css -o ./dist/styles.css --minify",
+    "dev": "tailwindcss -i ./css/styles.css -o ./dist/styles.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0",
+    "postcss": "^8.4.21",
+    "autoprefixer": "^10.4.14"
+  }
+}
