@@ -1,16 +1,12 @@
-# Nik's Website Solutions
+# Nik’s Website Solutions
 
-Professional web design for local businesses in **Lufkin, Nacogdoches, Tyler, and East Texas**.
+A lean, professional one-page site for small business clients in East Texas.  
+Built with **HTML + TailwindCSS + Netlify Forms**.
 
-## Features
+---
 
-- Fast, affordable websites tailored for small businesses
-- SEO-ready with LocalBusiness schema
-- Mobile-first design with sticky call button
-- Services include Google Business Profile setup, hosting, and ongoing updates
+## 🚀 Quick Start
 
-## Tech
+### 1. Install dependencies
 
-- HTML5
-- Tailwind CSS
-- Custom styles in `dist/styles.css`
+npm install

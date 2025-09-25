@@ -1,202 +1,447 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Nik’s Website Solutions builds affordable, professional websites for East Texas businesses. Serving Lufkin, Nacogdoches, Tyler, and Houston with SEO-optimized, mobile-friendly designs." />
-  <title>Nik's Website Solutions | East Texas Web Design</title>
-  <link href="dist/styles.css" rel="stylesheet">
-</head>
-<body class="antialiased text-gray-800 bg-gray-50">
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Hero Section -->
-  <header class="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white">
-    <div class="container mx-auto px-6 py-24 text-center">
-      <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6">
-        Websites That Bring You More Customers
-      </h1>
-      <p class="text-xl md:text-2xl mb-8">
-        Affordable and fast — built for local businesses from mom & pops to larger shops across 
-        <span class="font-semibold">Lufkin and East Texas</span>.
-      </p>
-      <a href="#contact" class="inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-8 py-4 rounded-lg shadow-lg transition">
-        Book a Free Consultation
-      </a>
-    </div>
-  </header>
+    <!-- Inter (professional + warm) -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Stats Section -->
-  <section class="py-20 bg-white">
-    <div class="container mx-auto px-6 text-center">
-      <h2 class="text-3xl md:text-4xl font-bold mb-12">Why Your Business Needs a Website</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-        <div>
-          <p class="text-5xl font-extrabold text-blue-600">77%</p>
-          <p class="mt-4">of diners check a restaurant’s website before visiting. 
-            <span class="text-gray-500 text-sm">(Restaurant Dive, 2022)</span>
-          </p>
-        </div>
-        <div>
-          <p class="text-5xl font-extrabold text-blue-600">68%</p>
-          <p class="mt-4">of drivers search online before booking auto service. 
-            <span class="text-gray-500 text-sm">(AAA, 2021)</span>
-          </p>
-        </div>
-        <div>
-          <p class="text-5xl font-extrabold text-blue-600">45%</p>
-          <p class="mt-4">of small businesses still don’t have a website. 
-            <span class="text-gray-500 text-sm">(GoDaddy, 2023)</span>
-          </p>
+    <!-- Title & Description -->
+    <title>
+      Nik’s Website Solutions | Affordable Websites for East Texas Businesses
+    </title>
+    <meta
+      name="description"
+      content="Professional websites for East Texas businesses. Fast 2-week turnaround, mobile-first design, and local support. Get your business online today."
+    />
+
+    <!-- Open Graph (Social Sharing) -->
+    <meta
+      property="og:title"
+      content="Nik’s Website Solutions | Affordable Websites for East Texas Businesses"
+    />
+    <meta
+      property="og:description"
+      content="Professional websites for East Texas businesses. Fast 2-week turnaround, mobile-first design, and local support."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.yoursite.com" />
+    <meta
+      property="og:image"
+      content="https://www.yoursite.com/assets/preview.jpg"
+    />
+
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Nik’s Website Solutions",
+        "image": "https://www.yoursite.com/assets/preview.jpg",
+        "telephone": "9366711970",
+        "email": "info@nikswesolutions.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Lufkin",
+          "addressRegion": "TX",
+          "addressCountry": "US"
+        },
+        "url": "https://www.yoursite.com",
+        "sameAs": []
+      }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="favicon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="favicon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+
+    <!-- Built Tailwind CSS -->
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body class="font-sans text-gray-800">
+    <!-- HERO (blue + image with overlay) -->
+    <header id="hero" class="relative">
+      <div class="absolute inset-0">
+        <div
+          class="h-full w-full bg-cover bg-center"
+          style="background-image: url('assets/downtown-lufkin.jpg')"
+        ></div>
+        <div class="absolute inset-0 bg-blue-900/75"></div>
+      </div>
+      <div class="relative text-white text-center py-32 px-6">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">
+          Websites That Help East Texas Businesses Grow
+        </h1>
+        <p class="text-lg md:text-xl mb-8 max-w-prose mx-auto">
+          Based in Lufkin, I build clean, mobile-friendly sites that support
+          everything from local shops to growing companies.
+        </p>
+        <a href="#contact" class="btn-cta px-8 py-4 inline-block"
+          >Book a Free Consultation</a
+        >
+      </div>
+    </header>
+
+    <!-- STATS (light gray) -->
+    <section class="py-24 bg-gray-100 text-center">
+      <div class="container">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12">
+          Why Your Business Needs a Website
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div>
+            <p class="text-5xl font-extrabold text-blue-800">77%</p>
+            <p class="mt-4 max-w-prose mx-auto">
+              of customers check a business’s website before visiting.
+              <a
+                href="https://www.restaurantdive.com/"
+                target="_blank"
+                class="text-blue-700 underline"
+                >(Restaurant Dive)</a
+              >
+            </p>
+          </div>
+          <div>
+            <p class="text-5xl font-extrabold text-blue-800">68%</p>
+            <p class="mt-4 max-w-prose mx-auto">
+              of people research online before choosing who to work with.
+              <a
+                href="https://www.aaa.com/"
+                target="_blank"
+                class="text-blue-700 underline"
+                >(AAA)</a
+              >
+            </p>
+          </div>
+          <div>
+            <p class="text-5xl font-extrabold text-blue-800">45%</p>
+            <p class="mt-4 max-w-prose mx-auto">
+              of small businesses still don’t have a website.
+              <a
+                href="https://www.godaddy.com/"
+                target="_blank"
+                class="text-blue-700 underline"
+                >(GoDaddy)</a
+              >
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Services Section -->
-  <section class="py-20 bg-gray-100">
-    <div class="container mx-auto px-6 text-center">
-      <h2 class="text-3xl md:text-4xl font-bold mb-12">Services Built for Small Businesses</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-white p-8 rounded-lg shadow">
-          <h3 class="text-2xl font-semibold mb-4">Web Design</h3>
-          <p>Clean, mobile-friendly websites tailored for restaurants, auto shops, and contractors.</p>
-        </div>
-        <div class="bg-white p-8 rounded-lg shadow">
-          <h3 class="text-2xl font-semibold mb-4">SEO Setup</h3>
-          <p>Get found on Google with optimized pages and a Google Business Profile setup.</p>
-        </div>
-        <div class="bg-white p-8 rounded-lg shadow">
-          <h3 class="text-2xl font-semibold mb-4">Hosting & Care</h3>
-          <p>Secure hosting, backups, and ongoing updates so you can focus on your business.</p>
+    <!-- SERVICES (white) -->
+    <section id="services" class="py-24 bg-white text-center">
+      <div class="container">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12">
+          Services Built for Small Businesses
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div class="bg-white p-8 rounded-xl shadow">
+            <h3 class="text-2xl font-semibold mb-4">Web Design</h3>
+            <p class="max-w-prose mx-auto">
+              Affordable, professional websites built and launched in
+              <span class="font-semibold">2 weeks or less</span>. Get online
+              quickly and start attracting more customers.
+            </p>
+          </div>
+          <div class="bg-white p-8 rounded-xl shadow">
+            <h3 class="text-2xl font-semibold mb-4">SEO Setup</h3>
+            <p class="max-w-prose mx-auto">
+              We make it easy for new customers to find you on Google. Every
+              site includes optimized pages and a
+              <span class="font-semibold">Google Business Profile</span>.
+            </p>
+          </div>
+          <div class="bg-white p-8 rounded-xl shadow">
+            <h3 class="text-2xl font-semibold mb-4">Worry-Free Website Care</h3>
+            <p class="max-w-prose mx-auto">
+              No confusing tech. Just secure hosting, regular backups, and
+              updates — so your website runs smoothly while you focus on your
+              business.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Demo Showcase -->
-  <section class="py-20 bg-white">
-    <div class="container mx-auto px-6 text-center">
-      <h2 class="text-3xl md:text-4xl font-bold mb-12">See What Your Business Could Look Like</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-gray-100 p-12 rounded-lg shadow">Restaurant Demo (Coming Soon)</div>
-        <div class="bg-gray-100 p-12 rounded-lg shadow">Auto Shop Demo (Coming Soon)</div>
-        <div class="bg-gray-100 p-12 rounded-lg shadow">Contractor Demo (Coming Soon)</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Us -->
-  <section class="py-20 bg-gray-100">
-    <div class="container mx-auto px-6 text-center max-w-3xl">
-      <h2 class="text-3xl md:text-4xl font-bold mb-8">About Us</h2>
-      <p class="text-lg leading-relaxed mb-6">
-        <span class="font-bold">Hi, I’m Nik.</span> I started Nik’s Website Solutions to help East Texas 
-        businesses thrive online. From restaurants and auto shops to local contractors, 
-        I believe every business deserves a site that brings in more customers.
-      </p>
-      <p class="text-lg leading-relaxed">
-        I live in Lufkin and work across East Texas — Nacogdoches, Tyler, and Houston. 
-        I shop at the same local businesses you do, and I build websites that make them 
-        proud to share their online presence.
-      </p>
-    </div>
-  </section>
-
-  <!-- Pricing -->
-  <section class="py-20 bg-white">
-    <div class="container mx-auto px-6 text-center">
-      <h2 class="text-3xl md:text-4xl font-bold mb-12">Simple Packages, No Surprises</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-gray-50 p-8 rounded-lg shadow">
-          <h3 class="text-2xl font-semibold mb-4">Foundation</h3>
-          <p class="text-3xl font-bold mb-4">$999 <span class="text-lg font-normal">+ $149/mo</span></p>
-          <ul class="text-left space-y-2">
-            <li>✓ 1-page site</li>
-            <li>✓ Mobile-friendly design</li>
-            <li>✓ Google Business Profile</li>
-            <li>✓ Secure hosting & updates</li>
-          </ul>
-          <a href="#contact" class="mt-6 inline-block bg-blue-700 hover:bg-blue-800 text-white font-semibold px-6 py-3 rounded-lg shadow transition">
-            Get Started
+    <!-- DEMOS (gray) -->
+    <section class="py-24 bg-gray-100">
+      <div class="container text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12">
+          See What Your Business Could Look Like
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <a href="#" class="bg-white p-12 rounded-xl shadow block">
+            <p class="mb-4 font-semibold">Restaurant Demo</p>
+            <span
+              class="inline-block bg-gray-400 text-white px-6 py-3 rounded-lg shadow cursor-not-allowed"
+              >Preview Coming Soon</span
+            >
+            <p class="mt-2 text-sm text-gray-500">Preview coming tomorrow</p>
+          </a>
+          <a href="#" class="bg-white p-12 rounded-xl shadow block">
+            <p class="mb-4 font-semibold">Auto Shop Demo</p>
+            <span
+              class="inline-block bg-gray-400 text-white px-6 py-3 rounded-lg shadow cursor-not-allowed"
+              >Preview Coming Soon</span
+            >
+            <p class="mt-2 text-sm text-gray-500">Preview coming tomorrow</p>
+          </a>
+          <a href="#" class="bg-white p-12 rounded-xl shadow block">
+            <p class="mb-4 font-semibold">Contractor Demo</p>
+            <span
+              class="inline-block bg-gray-400 text-white px-6 py-3 rounded-lg shadow cursor-not-allowed"
+              >Preview Coming Soon</span
+            >
+            <p class="mt-2 text-sm text-gray-500">Preview coming tomorrow</p>
           </a>
         </div>
-        <div class="bg-gray-50 p-8 rounded-lg shadow">
-          <h3 class="text-2xl font-semibold mb-4">Growth</h3>
-          <p class="text-3xl font-bold mb-4">$1,499 <span class="text-lg font-normal">+ $249/mo</span></p>
-          <ul class="text-left space-y-2">
-            <li>✓ 3–5 pages</li>
-            <li>✓ SEO starter package</li>
-            <li>✓ Monthly visitor report</li>
-            <li>✓ Secure hosting & backups</li>
-          </ul>
-          <a href="#contact" class="mt-6 inline-block bg-blue-700 hover:bg-blue-800 text-white font-semibold px-6 py-3 rounded-lg shadow transition">
-            Get Started
-          </a>
-        </div>
-        <div class="bg-gray-50 p-8 rounded-lg shadow">
-          <h3 class="text-2xl font-semibold mb-4">Legacy</h3>
-          <p class="text-3xl font-bold mb-4">$2,499 <span class="text-lg font-normal">+ $399/mo</span></p>
-          <ul class="text-left space-y-2">
-            <li>✓ Custom site & features</li>
-            <li>✓ Advanced SEO package</li>
-            <li>✓ Priority support</li>
-            <li>✓ Proactive monitoring</li>
-          </ul>
-          <a href="#contact" class="mt-6 inline-block bg-blue-700 hover:bg-blue-800 text-white font-semibold px-6 py-3 rounded-lg shadow transition">
-            Get Started
-          </a>
+      </div>
+    </section>
+
+    <!-- ABOUT (white) -->
+    <section class="py-24 bg-white">
+      <div class="container text-center max-w-3xl">
+        <h2 class="text-3xl md:text-4xl font-bold mb-8">About Me</h2>
+        <p class="text-lg leading-relaxed mb-6">
+          <span class="font-bold">Hi, I’m Nik.</span> I started Nik’s Website
+          Solutions to help East Texas businesses get online with sites that
+          actually bring in customers — not just sit there looking pretty.
+        </p>
+        <p class="text-lg leading-relaxed mb-6">
+          I live in Lufkin and work across East Texas — Nacogdoches, Tyler,
+          Houston, and everywhere in between. I shop at the same local
+          businesses you do, and I know what it means to earn trust in a small
+          community.
+        </p>
+        <p class="text-lg leading-relaxed">
+          Most sites I build are live in under
+          <span class="font-semibold">two weeks</span>, and every one is
+          designed mobile-first so your customers can find you on any device. If
+          something goes wrong, I’ll handle it — so you can stay focused on
+          running your business.
+        </p>
+      </div>
+    </section>
+
+    <!-- PRICING (gray) -->
+    <section id="pricing" class="py-24 bg-gray-100">
+      <div class="container text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12">Pricing Plans</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <!-- Starter -->
+          <div class="bg-white p-8 rounded-xl shadow">
+            <h3 class="text-2xl font-semibold mb-2">Starter</h3>
+            <p class="text-xl font-bold mb-4">$1,500 one-time + $200/mo</p>
+            <ul class="text-left mb-6 space-y-2 max-w-prose mx-auto">
+              <li>✔ Professional website launched in under 2 weeks</li>
+              <li>✔ Mobile-first design so customers find you anywhere</li>
+              <li>✔ Show up on Google with optimized pages</li>
+              <li>✔ Secure hosting, backups, and updates included</li>
+            </ul>
+            <p class="text-sm text-gray-600 mb-6">
+              Best for: Small shops, family-owned restaurants, and service
+              businesses just getting started online
+            </p>
+            <a href="#contact" class="btn-cta block px-6 py-3">Get Started</a>
+          </div>
+
+          <!-- Professional (Best Value) -->
+          <div
+            class="bg-orange-50 p-8 rounded-xl shadow border-2 border-orange-500 md:scale-105 md:relative md:z-10 md:shadow-xl md:-mt-4"
+          >
+            <h3 class="text-2xl font-semibold mb-2">Professional</h3>
+            <p class="text-sm text-orange-600 font-bold mb-2">Best Value</p>
+            <p class="text-xl font-bold mb-4">$2,000 one-time + $300/mo</p>
+            <ul class="text-left mb-6 space-y-2 max-w-prose mx-auto">
+              <li>✔ Everything in Starter</li>
+              <li>✔ Extra customization to match your business branding</li>
+              <li>✔ Priority support when you need changes</li>
+              <li>✔ Faster updates & care</li>
+            </ul>
+            <p class="text-sm text-gray-600 mb-6">
+              Best for: Established local businesses that want a polished site
+              to grow their customer base
+            </p>
+            <a href="#contact" class="btn-cta block px-6 py-3">Get Started</a>
+            <p class="mt-6 text-sm text-gray-600 italic">
+              I only take on a limited number of new clients each month to make
+              sure every project gets the attention it deserves.
+            </p>
+          </div>
+
+          <!-- Premium -->
+          <div class="bg-white p-8 rounded-xl shadow">
+            <h3 class="text-2xl font-semibold mb-2">Premium</h3>
+            <p class="text-xl font-bold mb-4">$2,500 one-time + $500/mo</p>
+            <ul class="text-left mb-6 space-y-2 max-w-prose mx-auto">
+              <li>✔ Everything in Professional</li>
+              <li>✔ Advanced features (forms, booking tools, etc.)</li>
+              <li>✔ Premium support with top priority response</li>
+              <li>✔ Scales for larger businesses and contractors</li>
+            </ul>
+            <p class="text-sm text-gray-600 mb-6">
+              Best for: Contractors, growing companies, or businesses needing
+              advanced features and faster support
+            </p>
+            <a href="#contact" class="btn-cta block px-6 py-3">Get Started</a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact Form -->
-  <section id="contact" class="py-20 bg-gray-100">
-    <div class="container mx-auto px-6 max-w-2xl text-center">
-      <h2 class="text-3xl md:text-4xl font-bold mb-8">Book a Free Consultation</h2>
-      <form action="#" method="POST" class="bg-white shadow rounded-lg p-8 space-y-6">
-        <div class="grid md:grid-cols-3 gap-4">
-          <input type="text" placeholder="Name (required)" required class="border border-gray-300 rounded p-3 w-full">
-          <input type="tel" placeholder="Phone (required)" required class="border border-gray-300 rounded p-3 w-full">
-          <select class="border border-gray-300 rounded p-3 w-full" required>
+    <!-- CONTACT (desktop only) -->
+    <section id="contact" class="py-24 bg-white hidden md:block">
+      <div class="container max-w-2xl text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-2">Get in Touch</h2>
+        <p class="mb-6 text-lg">📞 936-671-1970</p>
+        <form
+          name="lead-form"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          class="bg-gray-50 shadow rounded-xl p-8 space-y-6"
+          onsubmit="handleFormSubmit(event)"
+        >
+          <input type="hidden" name="form-name" value="lead-form" />
+          <p class="hidden">
+            <label
+              >Don’t fill this out if you’re human: <input name="bot-field"
+            /></label>
+          </p>
+
+          <div class="grid md:grid-cols-2 gap-4">
+            <input
+              type="text"
+              name="owner-name"
+              placeholder="Owner Name (required)"
+              required
+              class="border border-gray-300 rounded p-3 w-full"
+            />
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Phone (required)"
+              required
+              class="border border-gray-300 rounded p-3 w-full"
+            />
+          </div>
+
+          <input
+            type="email"
+            name="email"
+            placeholder="Email (required)"
+            required
+            class="border border-gray-300 rounded p-3 w-full"
+          />
+
+          <select
+            name="business-type"
+            required
+            class="border border-gray-300 rounded p-3 w-full"
+          >
             <option value="">Business Type</option>
             <option>Restaurant</option>
             <option>Auto Shop</option>
-            <option>Contractor</option>
+            <option>Grocery Store</option>
             <option>Other</option>
           </select>
-        </div>
-        <input type="text" placeholder="Business Name (optional)" class="border border-gray-300 rounded p-3 w-full">
-        <textarea placeholder="Message (optional)" rows="5" class="border border-gray-300 rounded p-3 w-full"></textarea>
-        <button type="submit" class="w-full bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-4 rounded-lg shadow-lg transition">
-          Send Message
-        </button>
-      </form>
-    </div>
-  </section>
 
-  <!-- Footer -->
-  <footer class="bg-blue-800 text-white py-10">
-    <div class="container mx-auto px-6 grid md:grid-cols-3 gap-8 text-center md:text-left">
-      <div>
-        <h3 class="text-xl font-semibold mb-4">Nik's Website Solutions</h3>
-        <p>Helping East Texas businesses grow online with websites that build trust and attract customers.</p>
+          <textarea
+            name="message"
+            placeholder="Message (optional)"
+            rows="4"
+            maxlength="500"
+            class="border border-gray-300 rounded p-3 w-full"
+          ></textarea>
+
+          <button type="submit" class="btn-cta w-full px-6 py-4">
+            Send Message
+          </button>
+
+          <p id="form-success" class="hidden text-green-600 font-semibold mt-4">
+            ✅ Thanks, I’ll be in touch within 24 hours.<br />
+            Your details have been received successfully.
+          </p>
+        </form>
       </div>
-      <div>
-        <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
-        <ul class="space-y-2">
-          <li><a href="#services" class="hover:underline">Services</a></li>
-          <li><a href="#pricing" class="hover:underline">Pricing</a></li>
-          <li><a href="#contact" class="hover:underline">Contact</a></li>
-        </ul>
+    </section>
+
+    <!-- Sticky Call (mobile only) -->
+    <a
+      href="tel:9366711970"
+      class="fixed bottom-4 right-4 btn-cta px-6 py-3 rounded-full md:hidden"
+    >
+      Call Now
+    </a>
+
+    <!-- FOOTER (dark) -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div
+        class="container grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left"
+      >
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Contact</h3>
+          <p class="mb-2">
+            📞
+            <a href="tel:9366711970" class="hover:text-orange-400"
+              >936-671-1970</a
+            >
+          </p>
+          <p>
+            📧
+            <a
+              href="mailto:info@nikswesolutions.com"
+              class="hover:text-orange-400"
+              >info@nikswesolutions.com</a
+            >
+          </p>
+        </div>
+        <nav aria-label="Footer Navigation">
+          <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="#hero" class="hover:text-orange-400">Home</a></li>
+            <li>
+              <a href="#services" class="hover:text-orange-400">Services</a>
+            </li>
+            <li>
+              <a href="#pricing" class="hover:text-orange-400">Pricing</a>
+            </li>
+            <li>
+              <a href="#contact" class="hover:text-orange-400">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="flex flex-col items-center md:items-end justify-center">
+          <p class="mb-2"><strong>Proudly serving East Texas</strong></p>
+          <p class="text-sm text-gray-400">Nik’s Website Solutions © 2025</p>
+          <p class="text-xs text-gray-500 mt-4 italic">
+            Taking on a limited number of projects each month — contact me early
+            to reserve your place.
+          </p>
+        </div>
       </div>
-      <div>
-        <h3 class="text-xl font-semibold mb-4">Contact</h3>
-        <p>Phone: <a href="tel:9366711970" class="hover:underline">(936) 671-1970</a></p>
-        <p>Email: <a href="mailto:nik@nikswebsitesolutions.com" class="hover:underline">nik@nikswebsitesolutions.com</a></p>
-      </div>
-    </div>
-    <p class="text-center mt-8 text-sm text-gray-300">© 2025 Nik's Website Solutions. All rights reserved.</p>
-  </footer>
-</body>
+    </footer>
+
+    <!-- Minimal Inline JS (Netlify inline confirmation) -->
+    <script>
+      function handleFormSubmit(e) {
+        e.preventDefault();
+        const form = e.target;
+        const data = new FormData(form);
+        fetch("/", { method: "POST", body: data })
+          .then(() => {
+            form.reset();
+            document.getElementById("form-success").classList.remove("hidden");
+          })
+          .catch(() => alert("Something went wrong. Please try again."));
+      }
+    </script>
+  </body>
 </html>

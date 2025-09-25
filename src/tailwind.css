@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Minimal base tweaks */
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply font-sans text-gray-800;
+  }
+}
+
+/* Reusable utility for CTA hover polish (darken + shadow bump) */
+@layer components {
+  .btn-cta {
+    @apply bg-orange-500 text-white font-semibold rounded-lg shadow-lg transition ease-in-out duration-200;
+  }
+  .btn-cta:hover {
+    @apply bg-orange-600 shadow-xl;
+    transform: translateY(-1px);
+  }
+}
